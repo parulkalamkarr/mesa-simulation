@@ -15,7 +15,7 @@ class CityModel(mesa.Model):
         self.grid = mesa.space.NetworkGrid(nx.grid_2d_graph(width, height))
 
         self.G = nx.grid_2d_graph(width, height)
-        
+
         for i in range(self.num_drivers):
             x, y = self.random.choice(list(self.G.nodes))
             driver = DriverAgent(i, self, (x, y))
