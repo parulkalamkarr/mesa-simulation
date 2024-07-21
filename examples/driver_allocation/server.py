@@ -1,7 +1,7 @@
 from agents import DriverAgent
 from mesa.visualization.ModularVisualization import ModularServer
 from mesa.visualization.modules import CanvasGrid
-from model.simulation import CityModel
+from simulation import CityModel
 
 
 def agent_portrayal(agent):
