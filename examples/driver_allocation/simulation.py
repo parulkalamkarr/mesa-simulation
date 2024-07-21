@@ -1,6 +1,8 @@
 import mesa
 import networkx as nx
+
 from .agents.py import DriverAgent, RideAgent
+
 
 class CityModel(mesa.Model):
     def __init__(self, num_drivers, num_rides, width, height):

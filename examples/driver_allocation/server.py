@@ -1,14 +1,15 @@
-import mesa
-from mesa.visualization.modules import CanvasGrid
+from agents import DriverAgent
 from mesa.visualization.ModularVisualization import ModularServer
+from mesa.visualization.modules import CanvasGrid
 from model.simulation import CityModel
+
 
 def agent_portrayal(agent):
     portrayal = {
         "Shape": "circle",
         "Color": "red" if isinstance(agent, DriverAgent) else "blue",
         "Filled": "true",
-        "r": 0.5
+        "r": 0.5,
     }
     return portrayal
 
